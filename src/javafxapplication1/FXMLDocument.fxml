@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="anchor_pane_Background" maxHeight="1080.0" maxWidth="1920.0" prefHeight="786.0" prefWidth="1300.0" style="-fx-background-color: lightgray;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication1.FXMLDocumentController">
+    <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="LIGHTBLUE" height="36.0" layoutX="263.0" layoutY="733.0" stroke="BLACK" strokeWidth="0.5" width="94.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="35.0" layoutX="361.0" layoutY="734.0" stroke="BLACK" strokeLineCap="ROUND" strokeWidth="0.5" width="909.0" />
+      <Label fx:id="label_TimeAndDateMiscellaneous" alignment="CENTER" layoutX="24.0" layoutY="734.0" maxHeight="35.0" maxWidth="106.0" prefHeight="35.0" prefWidth="106.0" style="-fx-background-color: LIGHTBLUE; -fx-border-color: BLACK;" text="No data">
+         <font>
+            <Font size="16.0" />
+         </font></Label>
+      <Text fx:id="text_TimeAndDate" layoutX="24.0" layoutY="730.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Time and Date:">
+         <font>
+            <Font size="16.0" />
+         </font></Text>
+      <GridPane fx:id="grid_pane_Stats" alignment="CENTER" layoutX="274.0" layoutY="47.0" maxHeight="226.0" maxWidth="592.0" prefHeight="226.0" prefWidth="592.0" style="-fx-background-color: GRAY; -fx-border-color: BLACK;">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="94.0" minWidth="10.0" prefWidth="88.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="96.0" minWidth="10.0" prefWidth="91.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="108.0" minWidth="10.0" prefWidth="99.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="96.0" minWidth="10.0" prefWidth="84.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="142.0" minWidth="10.0" prefWidth="140.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="92.0" minWidth="10.0" prefWidth="78.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Text fx:id="text_Roll" strokeType="OUTSIDE" strokeWidth="0.0" text="Roll:" GridPane.rowIndex="1">
+               <font>
+                  <Font size="16.5" />
+               </font></Text>
+            <Text fx:id="text_Pitch" strokeType="OUTSIDE" strokeWidth="0.0" text="Pitch:" GridPane.rowIndex="2">
+               <font>
+                  <Font size="16.5" />
+               </font></Text>
+            <Text fx:id="text_Yaw" strokeType="OUTSIDE" strokeWidth="0.0" text="Yaw:" GridPane.rowIndex="3">
+               <font>
+                  <Font size="16.5" />
+               </font></Text>
+            <Text fx:id="text_Compass" strokeType="OUTSIDE" strokeWidth="0.0" text="Compass:" GridPane.rowIndex="4">
+               <font>
+                  <Font size="16.5" />
+               </font></Text>
+            <Label fx:id="label_RollNumber" text="No data" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <font>
+                  <Font size="16.5" />
+               </font></Label>
+            <Label fx:id="label_PitchNumber" text="No data" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <font>
+                  <Font size="16.5" />
+               </font></Label>
+            <Label fx:id="label_YawNumber" text="No data" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <font>
+                  <Font size="16.5" />
+               </font></Label>
+            <Label fx:id="label_CompassNumber" text="No data" GridPane.columnIndex="1" GridPane.rowIndex="4">
+               <font>
+                  <Font size="16.5" />
+               </font></Label>
+            <Text fx:id="text_Latitude" strokeType="OUTSIDE" strokeWidth="0.0" text="Latitude:" GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.rowIndex="1">
+               <font>
+                  <Font size="16.5" />
+               </font></Text>
+            <Text fx:id="text_Longitude" strokeType="OUTSIDE" strokeWidth="0.0" text="Longitude:" GridPane.columnIndex="2" GridPane.rowIndex="2">
+               <font>
+                  <Font size="16.5" />
+               </font></Text>
+            <Text fx:id="text_Height" strokeType="OUTSIDE" strokeWidth="0.0" text="Height:" GridPane.columnIndex="2" GridPane.rowIndex="3">
+               <font>
+                  <Font size="16.5" />
+               </font></Text>
+            <Label fx:id="label_LatitudeNumber" text="No data" GridPane.columnIndex="3" GridPane.rowIndex="1">
+               <font>
+                  <Font size="16.5" />
+               </font></Label>
+            <Label fx:id="label_LongitudeNumber" text="No data" GridPane.columnIndex="3" GridPane.rowIndex="2">
+               <font>
+                  <Font size="16.5" />
+               </font></Label>
+            <Label fx:id="label_HeightNumber" text="No data" GridPane.columnIndex="3" GridPane.rowIndex="3">
+               <font>
+                  <Font size="16.5" />
+               </font></Label>
+            <Label fx:id="label_Stats" alignment="CENTER" maxHeight="35.0" maxWidth="74.0" prefHeight="35.0" prefWidth="74.0" style="-fx-background-color: lightgray; -fx-border-color: black;" text="Stats:" GridPane.halignment="LEFT">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Text fx:id="text_CurrentSpeed" strokeType="OUTSIDE" strokeWidth="0.0" text="Current speed:" GridPane.columnIndex="4" GridPane.rowIndex="1">
+               <font>
+                  <Font size="16.5" />
+               </font></Text>
+            <Text fx:id="text_TravelledDistance" strokeType="OUTSIDE" strokeWidth="0.0" text="Travelled distance:" GridPane.columnIndex="4" GridPane.rowIndex="2">
+               <font>
+                  <Font size="16.5" />
+               </font></Text>
+            <Label fx:id="label_CurrentSpeedNumber" text="No data" GridPane.columnIndex="5" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets left="10.0" />
+               </GridPane.margin>
+               <font>
+                  <Font size="16.5" />
+               </font></Label>
+            <Label fx:id="label_TraveledDistanceNumber" text="No data" GridPane.columnIndex="5" GridPane.rowIndex="2">
+               <GridPane.margin>
+                  <Insets left="10.0" />
+               </GridPane.margin>
+               <font>
+                  <Font size="16.5" />
+               </font></Label>
+            <Label fx:id="label_SteeringAngleNumber" text="No data" GridPane.columnIndex="5" GridPane.rowIndex="3">
+               <GridPane.margin>
+                  <Insets left="10.0" />
+               </GridPane.margin>
+               <font>
+                  <Font size="16.5" />
+               </font></Label>
+            <Text fx:id="text_SteeringAngleStats" strokeType="OUTSIDE" strokeWidth="0.0" text="Steering angle:" GridPane.columnIndex="4" GridPane.rowIndex="3">
+               <font>
+                  <Font size="16.5" />
+               </font></Text>
+         </children>
+         <padding>
+            <Insets left="5.0" right="5.0" />
+         </padding>
+      </GridPane>
+      <AnchorPane fx:id="anchor_pane_CameraSimulator" layoutX="274.0" layoutY="281.0" maxHeight="416.0" maxWidth="592.0" prefHeight="416.0" prefWidth="592.0" style="-fx-background-color: gray; -fx-border-color: Black;">
+         <children>
+            <GridPane fx:id="grid_pane_CameraSimulator" alignment="CENTER" gridLinesVisible="true" layoutX="13.0" layoutY="47.0" maxHeight="330.0" maxWidth="567.0" prefHeight="330.0" prefWidth="567.0" style="-fx-background-color: Gray; -fx-border-color: Black;">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="328.0" minHeight="10.0" prefHeight="258.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Text fx:id="text_StereoCamera" strokeType="OUTSIDE" strokeWidth="0.0" text="Stereo Camera" GridPane.halignment="CENTER" GridPane.valignment="TOP">
+                     <GridPane.margin>
+                        <Insets top="5.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font size="17.5" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="text_field_StereoCamera" onAction="#stereo_camera_warning_colorControl" promptText="Insert number in binary...">
+                     <GridPane.margin>
+                        <Insets bottom="240.0" left="10.0" right="10.0" top="10.0" />
+                     </GridPane.margin>
+                  </TextField>
+                  <Label fx:id="label_OdLeWarning" alignment="CENTER" maxHeight="45.0" maxWidth="80.0" prefHeight="45.0" prefWidth="80.0" style="-fx-background-color: LIGHTBLUE;" text="Od_Le" GridPane.valignment="BOTTOM">
+                     <GridPane.margin>
+                        <Insets bottom="200.0" left="10.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <Label fx:id="label_OdCenterWarning" alignment="CENTER" maxHeight="45.0" maxWidth="80.0" prefHeight="45.0" prefWidth="80.0" style="-fx-background-color: LIGHTBLUE;" text="Od_Center" GridPane.halignment="CENTER" GridPane.valignment="BOTTOM">
+                     <GridPane.margin>
+                        <Insets bottom="200.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <Label fx:id="label_OdLdWarning" alignment="CENTER" maxHeight="45.0" maxWidth="80.0" prefHeight="45.0" prefWidth="80.0" style="-fx-background-color: LIGHTBLUE;" text="Od_Ld" GridPane.halignment="RIGHT" GridPane.valignment="BOTTOM">
+                     <GridPane.margin>
+                        <Insets bottom="200.0" right="10.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <Label fx:id="label_OpLeWarning" alignment="CENTER" contentDisplay="TOP" maxHeight="45.0" maxWidth="80.0" prefHeight="45.0" prefWidth="80.0" style="-fx-background-color: LIGHTBLUE;" text="Op_Le">
+                     <GridPane.margin>
+                        <Insets left="10.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <Label fx:id="label_OpCenterWarning" alignment="CENTER" maxHeight="45.0" maxWidth="80.0" prefHeight="45.0" prefWidth="80.0" style="-fx-background-color: LIGHTBLUE;" text="Op_Center" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                  <Label fx:id="label_OpLdWarning" alignment="CENTER" maxHeight="45.0" maxWidth="80.0" prefHeight="45.0" prefWidth="80.0" style="-fx-background-color: LIGHTBLUE;" text="Op_Ld" GridPane.halignment="RIGHT" GridPane.valignment="CENTER">
+                     <GridPane.margin>
+                        <Insets right="10.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <Text fx:id="text_DecimalStereo" strokeType="OUTSIDE" strokeWidth="0.0" text="Decimal:" wrappingWidth="78.73828125" GridPane.halignment="LEFT" GridPane.valignment="BOTTOM">
+                     <GridPane.margin>
+                        <Insets bottom="15.0" left="10.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="text_field_DecimalStereo" alignment="CENTER" maxHeight="31.0" maxWidth="206.0" prefHeight="31.0" prefWidth="206.0" GridPane.halignment="RIGHT" GridPane.valignment="BOTTOM">
+                     <GridPane.margin>
+                        <Insets bottom="10.0" left="100.0" right="10.0" />
+                     </GridPane.margin>
+                  </TextField>
+                  <Text fx:id="text_OmniCamera" strokeType="OUTSIDE" strokeWidth="0.0" text="Omnidirectional Camera" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="TOP">
+                     <font>
+                        <Font size="17.5" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets top="5.0" />
+                     </GridPane.margin>
+                  </Text>
+                  <TextField fx:id="text_field_OmniCamera" onAction="#omni_camera_warning_colorControl" promptText="Insert number in binary..." GridPane.columnIndex="1">
+                     <GridPane.margin>
+                        <Insets bottom="240.0" left="10.0" right="10.0" top="10.0" />
+                     </GridPane.margin>
+                  </TextField>
+                  <Label fx:id="label_FrontWarning" alignment="CENTER" maxHeight="45.0" maxWidth="80.0" prefHeight="45.0" prefWidth="80.0" style="-fx-background-color: LIGHTBLUE; -fx-border-color: black;" text="Front" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="BOTTOM">
+                     <GridPane.margin>
+                        <Insets bottom="200.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <Label fx:id="label_LeftSideWarning" alignment="CENTER" maxHeight="45.0" maxWidth="80.0" prefHeight="45.0" prefWidth="80.0" style="-fx-background-color: LIGHTBLUE; -fx-border-color: black;" text="Left side" GridPane.columnIndex="1">
+                     <GridPane.margin>
+                        <Insets left="10.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <Label fx:id="label_RightSideWarning" alignment="CENTER" maxHeight="45.0" maxWidth="80.0" prefHeight="45.0" prefWidth="80.0" style="-fx-background-color: LIGHTBLUE; -fx-border-color: black;" text="Right side" GridPane.columnIndex="1" GridPane.halignment="RIGHT">
+                     <GridPane.margin>
+                        <Insets right="10.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <Label fx:id="label_BackWarning" alignment="CENTER" maxHeight="45.0" maxWidth="80.0" prefHeight="45.0" prefWidth="80.0" style="-fx-background-color: LIGHTBLUE; -fx-border-color: black;" text="Back" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="BOTTOM">
+                     <GridPane.margin>
+                        <Insets bottom="82.5" />
+                     </GridPane.margin>
+                  </Label>
+                  <Text fx:id="text_DecimalOmni" strokeType="OUTSIDE" strokeWidth="0.0" text="Decimal:" wrappingWidth="78.73828125" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.valignment="BOTTOM">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets bottom="15.0" left="10.0" />
+                     </GridPane.margin>
+                  </Text>
+                  <TextField fx:id="text_field_DecimalOmni" alignment="CENTER" maxHeight="31.0" maxWidth="206.0" prefHeight="31.0" prefWidth="206.0" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.valignment="BOTTOM">
+                     <GridPane.margin>
+                        <Insets bottom="10.0" left="100.0" right="10.0" />
+                     </GridPane.margin>
+                  </TextField>
+               </children>
+            </GridPane>
+            <Label fx:id="label_CameraSimulator" alignment="CENTER" layoutX="14.0" layoutY="5.0" maxHeight="30.0" maxWidth="179.0" prefHeight="30.0" prefWidth="179.0" style="-fx-background-color: lightgray; -fx-border-color: black;" text="Camera Simulator" AnchorPane.bottomAnchor="373.0" AnchorPane.leftAnchor="8.0" AnchorPane.rightAnchor="399.0" AnchorPane.topAnchor="5.0">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+         </children>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </AnchorPane>
+      <GridPane fx:id="grid_pane_MainControls" alignment="CENTER" layoutX="24.0" layoutY="47.0" maxHeight="650.0" maxWidth="235.0" minHeight="650.0" minWidth="235.0" prefHeight="650.0" prefWidth="235.0" style="-fx-background-color: gray; -fx-border-color: black;">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label fx:id="label_Controls" alignment="CENTER" maxHeight="43.0" maxWidth="128.0" prefHeight="43.0" prefWidth="128.0" style="-fx-background-color: lightgray; -fx-border-color: black;" text="Controls" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Button fx:id="button_Start" maxHeight="45.0" maxWidth="100.0" mnemonicParsing="false" onAction="#startDataCollection" prefHeight="45.0" prefWidth="100.0" style="-fx-background-color: lightgreen; -fx-border-color: black;" text="Start" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+            <Button fx:id="button_Pause" maxHeight="45.0" maxWidth="100.0" mnemonicParsing="false" onAction="#stopDataCollection" prefHeight="45.0" prefWidth="100.0" style="-fx-background-color: Yellow; -fx-border-color: black;" text="Pause" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+            <Button fx:id="button_Stop" maxHeight="45.0" maxWidth="100.0" mnemonicParsing="false" onAction="#stopProgram" prefHeight="45.0" prefWidth="100.0" style="-fx-background-color: Red; -fx-border-color: black;" text="Stop" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
+            <Text fx:id="text_RamStatus" strokeType="OUTSIDE" strokeWidth="0.0" text="RAM Status:" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER">
+               <font>
+                  <Font size="18.0" />
+               </font></Text>
+            <Label fx:id="label_RamStatusWarning" alignment="CENTER" prefHeight="40.0" prefWidth="145.0" style="-fx-background-color: LIGHTBLUE; -fx-border-color: BLACK;" text="No data" GridPane.halignment="CENTER" GridPane.rowIndex="5" GridPane.valignment="CENTER" />
+            <Text fx:id="text_SideTiltAngle" strokeType="OUTSIDE" strokeWidth="0.0" text="Side tilt angle:" GridPane.halignment="CENTER" GridPane.rowIndex="6" GridPane.valignment="CENTER">
+               <font>
+                  <Font size="18.0" />
+               </font></Text>
+            <Label fx:id="label_SideTiltAngleWarning" alignment="CENTER" maxHeight="40.0" maxWidth="145.0" prefHeight="40.0" prefWidth="145.0" style="-fx-background-color: LIGHTBLUE; -fx-border-color: BLACK;" text="No data" GridPane.halignment="CENTER" GridPane.rowIndex="7" GridPane.valignment="CENTER" />
+            <Text fx:id="text_FrontTiltAngle" strokeType="OUTSIDE" strokeWidth="0.0" text="Front tilt angle:" GridPane.halignment="CENTER" GridPane.rowIndex="8" GridPane.valignment="CENTER">
+               <font>
+                  <Font size="18.0" />
+               </font></Text>
+            <Label fx:id="label_FrontTiltAngleWarning" alignment="CENTER" maxHeight="40.0" maxWidth="145.0" prefHeight="40.0" prefWidth="145.0" style="-fx-background-color: LIGHTBLUE; -fx-border-color: BLACK;" text="No data" GridPane.halignment="CENTER" GridPane.rowIndex="9" GridPane.valignment="CENTER" />
+         </children>
+      </GridPane>
+      <GridPane fx:id="grid_pane_PriorityList" alignment="CENTER" layoutX="877.0" layoutY="201.0" maxHeight="356.0" maxWidth="395.0" prefHeight="356.0" prefWidth="395.0" style="-fx-background-color: Gray; -fx-border-color: black;">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label fx:id="label_P1Warning" alignment="CENTER" maxHeight="30.0" maxWidth="250.0" prefHeight="30.0" prefWidth="250.0" style="-fx-background-color: Green; -fx-border-color: Black;" text="P1" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+            <Label fx:id="label_P2Warning" alignment="CENTER" maxHeight="30.0" maxWidth="250.0" prefHeight="30.0" prefWidth="250.0" style="-fx-background-color: Yellow; -fx-border-color: black;" text="P2" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
+            <Label fx:id="label_P3Warning" alignment="CENTER" maxHeight="30.0" maxWidth="250.0" prefHeight="30.0" prefWidth="250.0" style="-fx-background-color: Orange; -fx-border-color: Black;" text="P3" GridPane.halignment="CENTER" GridPane.rowIndex="3" />
+            <Label fx:id="label_P4Warning" alignment="CENTER" maxHeight="30.0" maxWidth="250.0" prefHeight="30.0" prefWidth="250.0" style="-fx-background-color: Red; -fx-border-color: black;" text="P4" GridPane.halignment="CENTER" GridPane.rowIndex="4" />
+            <Label fx:id="label_PriorityList" alignment="CENTER" maxHeight="43.0" maxWidth="136.0" prefHeight="43.0" prefWidth="136.0" style="-fx-background-color: lightgray; -fx-border-color: black;" text="Priority list" GridPane.halignment="CENTER">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </GridPane>
+      <GridPane fx:id="grid_pane_SteeringAngleInput" alignment="CENTER" layoutX="877.0" layoutY="47.0" maxHeight="141.0" maxWidth="395.0" prefHeight="141.0" prefWidth="395.0" style="-fx-background-color: gray; -fx-border-color: black;">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="143.0" minWidth="10.0" prefWidth="127.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="180.0" minWidth="10.0" prefWidth="134.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="133.0" minWidth="10.0" prefWidth="128.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Text fx:id="text_SteeringAngleInput" strokeType="OUTSIDE" strokeWidth="0.0" text="Steering angle:" wrappingWidth="114.701171875" GridPane.halignment="CENTER">
+               <GridPane.margin>
+                  <Insets left="5.0" />
+               </GridPane.margin>
+               <font>
+                  <Font size="15.5" />
+               </font></Text>
+            <TextField fx:id="text_field_SteeringAngle" maxHeight="10.0" maxWidth="109.0" prefHeight="10.0" prefWidth="109.0" promptText="Type here..." GridPane.columnIndex="1" GridPane.halignment="CENTER">
+               <GridPane.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </GridPane.margin></TextField>
+            <Button fx:id="button_SumAngle" maxHeight="35.0" maxWidth="131.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="131.0" text="Sum angle" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets left="5.0" right="5.0" />
+               </GridPane.margin></Button>
+            <Button fx:id="button_SubtractAngle" maxHeight="35.0" maxWidth="131.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="131.0" text="Subtract angle" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets left="5.0" right="5.0" />
+               </GridPane.margin></Button>
+            <Button fx:id="button_AlignWheels" maxHeight="35.0" maxWidth="131.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="131.0" text="Align wheels" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets left="5.0" right="5.0" />
+               </GridPane.margin></Button>
+            <Label fx:id="label_SteeringAngleOutputNumber" text="No data" GridPane.columnIndex="2" GridPane.halignment="CENTER">
+               <font>
+                  <Font size="18.0" />
+               </font></Label>
+         </children>
+      </GridPane>
+      <GridPane fx:id="grid_pane_ManualControls" alignment="CENTER" layoutX="877.0" layoutY="568.0" maxHeight="129.0" maxWidth="395.0" prefHeight="129.0" prefWidth="395.0" style="-fx-background-color: gray; -fx-border-color: black;">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="226.0" minWidth="10.0" prefWidth="226.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="200.0" minWidth="10.0" prefWidth="157.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <TextField fx:id="text_field_SendData" promptText="Waiting for input..." GridPane.halignment="CENTER" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </GridPane.margin>
+            </TextField>
+            <TextField fx:id="text_field_Feedback" promptText="No data" GridPane.rowIndex="2">
+               <GridPane.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </GridPane.margin>
+            </TextField>
+            <Button fx:id="button_SendData" mnemonicParsing="false" text="Send data" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+            <Text fx:id="text_SystemFeedback" strokeType="OUTSIDE" strokeWidth="0.0" text="System Feedback" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Text>
+            <Label fx:id="label_ManualControl" alignment="CENTER" maxHeight="32.0" maxWidth="172.0" prefHeight="32.0" prefWidth="172.0" style="-fx-background-color: lightgray; -fx-border-color: black;" text="Manual Control" GridPane.halignment="CENTER">
+               <font>
+                  <Font size="20.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets bottom="10.0" top="10.0" />
+               </GridPane.margin>
+            </Label>
+         </children>
+      </GridPane>
+      <Text fx:id="text_Messages" layoutX="270.0" layoutY="758.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Messages:" wrappingWidth="90.5">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Text>
+      <Text fx:id="text_WarningMessagesText" layoutX="368.0" layoutY="758.0" strokeType="OUTSIDE" strokeWidth="0.0" text="No messages">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Text>
+    </children>
+</AnchorPane>
